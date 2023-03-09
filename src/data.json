@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the difference between `range` and `xrange` in Python 2?",
+    "answer": "In Python 2, range() returns a list of integers, while xrange() returns an iterator object. This means that xrange() can be more memory efficient for large ranges.",
+    "code": "for i in range(10):\n    print(i)\n\nfor i in xrange(10):\n    print(i)"
+  },
+  {
+    "question": "How do you declare a variable in Python?",
+    "answer": "In Python, variables are declared by assigning a value to a variable name.",
+    "code": "x = 5"
+  },
+  {
+    "question": "How do you concatenate two strings in Python?",
+    "answer": "In Python, you can concatenate two strings using the '+' operator or the 'join' method.",
+    "code": "str1 = 'Hello'\nstr2 = 'world'\n\n# Using the '+' operator\nresult1 = str1 + ' ' + str2\n\n# Using the 'join' method\nresult2 = ' '.join([str1, str2])"
+  },
+  {
+    "question": "What is a list comprehension in Python?",
+    "answer": "A list comprehension is a concise way to create a new list by applying a transformation to each element of an existing list.",
+    "code": "nums = [1, 2, 3, 4, 5]\n\n# Using a for loop\nsquares1 = []\nfor num in nums:\n    squares1.append(num**2)\n\n# Using a list comprehension\nsquares2 = [num**2 for num in nums]"
+  },
+  {
+    "question": "What is a lambda function in Python?",
+    "answer": "A lambda function is a small, anonymous function in Python that can have any number of arguments, but can only have one expression.",
+    "code": "f = lambda x, y: x + y\nresult = f(3, 4)"
+  },
+  {
+    "question": "What is a generator in Python?",
+    "answer": "A generator is a special type of iterator in Python that allows you to generate a sequence of values on-the-fly, rather than storing them all in memory at once.",
+    "code": "def squares(n):\n    for i in range(n):\n        yield i**2\n\nsquares_gen = squares(5)\nfor square in squares_gen:\n    print(square)"
+  },
+  {
+    "question": "What is a decorator in Python?",
+    "answer": "A decorator is a special type of function in Python that can be used to modify the behavior of other functions or classes.",
+    "code": "def my_decorator(func):\n    def wrapper():\n        print('Before function')\n        func()\n        print('After function')\n    return wrapper\n\n@my_decorator\ndef my_function():\n    print('Hello, world!')\n\nmy_function()"
+  },
+  {
+    "question": "What is the difference between `is` and `==` in Python?",
+    "answer": "In Python, `is` checks whether two objects are the same object in memory, while `==` checks whether two objects have the same value.",
+    "code": "a = [1, 2, 3]\nb = a\n\n# Using 'is'\nif a is b:\n    print('a and b are the same object')\nelse:\n    print('a and b are different objects')\n\n# Using '=='\nif a == b:\n    print('a and b have the same value')\nelse:\n    print('a and b have different values')"
+  },
+  {
+    "question": "What is the difference between a module and a package in Python?",
+    "answer": "In Python, a module is a single file that contains Python definitions, while a package is a collection of modules that are organized in a directory hierarchy.",
+    "code": "import my_module\n\n# Importing a module from a package\nimport my_package.my_module"
+  },
+  {
+    "question": "What is the difference between `append` and `extend` in Python?",
+    "answer": "In Python, `append` adds a single element to the end of a list, while `extend` adds all the elements of an iterable to the end of a list.",
+    "code": "a = [1, 2, 3]\n\n# Using 'append'\na.append(4)\n\n# Using 'extend'\na.extend([5, 6, 7])"
+  }
+]
