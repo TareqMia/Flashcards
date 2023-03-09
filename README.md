@@ -35,7 +35,8 @@ Here's a walkthrough of implemented required features:
 
 <!-- Replace this with whatever GIF tool you used! -->
 
-GIF created with ...
+GIF created with RecordIt
+![5huExZkntP](https://user-images.githubusercontent.com/39747003/223890054-139c00ba-7290-49b9-b4b5-b4a264df23e5.gif)
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
